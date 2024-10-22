@@ -10,7 +10,7 @@
   --main-color: #1a1a1a;
   --accent-color: #fe6900;
   --light-color: #FFF;
-  --main-font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  --main-font: "Roboto", sans-serif;
 }
 
 /* Main Styling  */
@@ -66,7 +66,6 @@ footer {
 /* Element Styling  */
 .product-grid {
   width:100%;
-  height:80%;
   flex-wrap: wrap;
   justify-content: center;
   align-items:flex-start;
@@ -82,8 +81,7 @@ footer {
 
 .prod_gallery {
   width:100%;
-  aspect-ratio: 2/3;
-  margin-bottom:5px;
+  aspect-ratio: 2/2.9;
 }
 
 .prod_gallery:hover .secondary_pic {
@@ -99,9 +97,35 @@ footer {
   right:0;
 }
 
+.wishlist-button:hover .fas {
+  color:red;
+}
+
 .wishlist-button .fas {
   color:var(--main-color);
   top:50%;
   left:50%;
   transform: translate(-50%, -50%);
+}
+
+.card .prod_info .brand {
+  font-size:0.8rem;
+}
+
+.card .prod_info .prod_title {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.card .prod_info .prices strong{
+  padding-left:3px;
+  color:darkgrey;
+  text-decoration:line-through;
+}
+
+.card .prod_info .prices {
+  font-size: .8rem;
+  color:var(--accent-color);
+  font-weight:bold;
 }
