@@ -19,7 +19,7 @@ body {
 }
 
 main {
-  padding:8% 0;
+  padding:8% 0 3%;
 }
 
 /* Utility  */
@@ -52,6 +52,7 @@ ul {
   opacity:0;
   transition: opacity 0.3s ease; /* Aggiungi una transizione */
 }
+
 /* Element Styling  */
 header {
   position:fixed;
@@ -66,11 +67,6 @@ footer {
   background-color: var(--main-color);
   color:white;
 }
-
-/* Debug Style  */
-/* .debug:hover {
-  background-color: rgba(153, 205, 50, 0.4);
-} */
 
 /* Element Styling  */
 
