@@ -1,0 +1,36 @@
+/* CSS RESET  */
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+/* Custom Properties  */
+:root {
+  --main-color: #1a1a1a;
+  --accent-color: #fe6900;
+  --main-font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Main Styling  */
+body {
+  font-family: var(--main-font)
+}
+
+/* Utility  */
+img {
+  max-width: 100%;
+}
+
+/* Debug Style  */
+.debug:hover {
+  background-color: rgba(153, 205, 50, 0.4);
+}
+
+header {
+  display:none;
+}
+
+footer {
+  display:none;
+}
