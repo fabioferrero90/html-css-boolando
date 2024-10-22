@@ -9,6 +9,7 @@
 :root {
   --main-color: #1a1a1a;
   --accent-color: #fe6900;
+  --light-color: #FFF;
   --main-font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -17,9 +18,35 @@ body {
   font-family: var(--main-font)
 }
 
+main {
+  padding:5% 0;
+}
+
 /* Utility  */
 img {
   max-width: 100%;
+}
+
+.container {
+  margin:0 auto;
+  max-width: 900px;
+}
+
+.d_flex {
+  display:flex;
+}
+
+.rel {
+  position:relative;
+}
+
+.absol {
+  position:absolute;
+}
+
+.secondary_pic {
+  opacity:0;
+  transition: opacity 0.3s ease; /* Aggiungi una transizione */
 }
 
 /* Debug Style  */
@@ -33,4 +60,48 @@ header {
 
 footer {
   display:none;
+}
+
+
+/* Element Styling  */
+.product-grid {
+  width:100%;
+  height:80%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items:flex-start;
+  gap:10px;
+}
+
+.product-grid .card {
+  width: calc(33.333% - 10px);
+  margin-bottom:20px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.prod_gallery {
+  width:100%;
+  aspect-ratio: 2/3;
+  margin-bottom:5px;
+}
+
+.prod_gallery:hover .secondary_pic {
+  opacity:1;
+}
+
+.wishlist-button {
+  background-color: var(--light-color);
+  height:10%;
+  width:15%;
+  z-index:999;
+  top:10px;
+  right:0;
+}
+
+.wishlist-button .fas {
+  color:var(--main-color);
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
 }
